@@ -1,0 +1,160 @@
+:root {
+  --hair:#BDF778;
+  --sweater:#9a5cc4;
+  --earrings:#eeba0e;
+  --nails:#FF92F6;
+  --stars:#BDF778;
+  --skin:#FFFFFF;
+  --trousers:#191b2e;
+  --outline:#3C3C3A;
+  --logo:#9a5cc4;
+  --bg: rgb(25, 38, 46);
+  --color: rgb(214, 214, 214);
+  --hover: #BDF778;
+  --bgButtons:rgba(255, 255, 255, 0.116);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body {
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+min-height: 100vh;
+background: var(--bg);
+font-size: 14px;
+}
+
+.container {
+text-align: center;
+
+}
+
+.label{
+  margin-bottom: 10px;
+  max-width: 800px;
+  width: 80vw;
+  font-size: 1rem;
+  /* font-weight: 800; */
+  color: var(--color);
+    h1{
+      color: var(--stars);
+      font-size: 1.2rem;
+    }
+}
+
+.container_svg{
+  padding: 15px;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 800px;
+}
+
+.container_buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: var(--bgButtons);
+}
+
+button{
+  border: none;
+  background: none;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  height: 2rem;
+  width: 70px;
+  font-size: 1rem;
+  color: var(--color);
+  &:hover{
+    color: var(--hover);
+    font-size: 1.1rem;
+  }
+  &:active{
+    font-size: 1rem;
+    color: var(--hover);
+  }
+  &:focus {
+    color: var(--hover);
+    outline: none;
+  }
+}
+/* ====================================================== */
+#stars{
+  transition: all 1s ease .3s;
+  transform:translate(0px, 150px);
+}
+.dark, .magic {
+  #stars{
+    transition: all 1s ease .3s;
+    transform:translate(0px, 0px);
+  }
+}
+
+.neon{
+}
+
+.dark {
+  --hair:#000000;
+  --sweater:#ada74e;
+  --earrings:#d6a02b;
+  --nails:#d6a02b;
+  --stars:#cccc50;
+  --skin:#c9c9c9;
+  --trousers:#292e4b;
+  --outline:#3C3C3A;
+  --logo:#FFFFFF;
+  --bg: #161822;
+  --color: rgb(214, 214, 214);
+  --hover: #c5c545;
+  --bgButtons:rgba(255, 255, 255, 0.116);
+}
+
+.pumpkin {
+--hair:#ebe5b6;
+--sweater:#a36430;
+--earrings:#eeb721;
+--nails:#d3d0ca;
+--stars:rgb(204, 135, 38);
+--skin:#f7f4ee;
+--trousers:#252b07;
+--outline:#3C3C3A;
+--logo:#083b0d;
+--bg: rgb(88, 76, 61);
+--color: rgb(214, 214, 214);
+--hover: rgb(204, 135, 38);
+--bgButtons:rgba(0, 0, 0, 0.075);
+}
+
+.magic {
+--hair:#f0aee5;
+--sweater:#147f83;
+--earrings:#fa32df;
+--nails:#fa32df;
+--stars:#33e6bf;
+--skin:#FFFFFF;
+--trousers:#1d1a27;
+--outline:#3C3C3A;
+--logo:#fa32df;
+--bg: rgb(100, 64, 95);
+--color: rgb(214, 214, 214);
+--hover: #33e6bf;
+--bgButtons:rgba(0, 0, 0, 0.075);
+}
